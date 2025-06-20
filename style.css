@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color: azure;
+  background-color: white;
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
@@ -16,8 +16,9 @@ nav {
   align-items: center;
   height: 30px;
   width: 100vw;
-  background-color: yellowgreen;
+  background-color: #222936;
   top: 0;
+  color: #e83c75;
 }
 nav a {
   display: flex;
@@ -25,6 +26,11 @@ nav a {
   align-items: center;
   padding: 80px;
   text-decoration: none;
+  color: #ffebd0;
+}
+nav a:hover {
+  color: #278783;
+  transition: 0.55s;
 }
 .container {
   display: flex;
@@ -34,12 +40,12 @@ nav a {
   height: fit-content;
   margin: auto;
   margin-top: 20px;
-  background-color: aquamarine;
+  background-color: #faeae1;
 }
 .card {
   width: 250px;
   height: 280px;
-  border: 2px solid greenyellow;
+  border: 1px solid white;
   border-radius: 2px;
   margin: 10px;
   object-fit: cover;
@@ -82,26 +88,40 @@ button {
   text-align: center;
   border: none;
   border-radius: 3px;
+  background-color: #222936;
+  color: #278783;
+}
+button:hover {
+  cursor: pointer;
+  transform: translateX(20%);
+  transition: 0.55s;
+}
+span {
+  font-size: 13px;
 }
 /* footer styling */
 footer {
   position: fixed;
-  background-color: greenyellow;
+  background-color: #222936;
   height: 35px;
   width: 100%;
   bottom: 0;
   margin: auto;
+  color: #ffebd0;
 }
 /* styling for <=600 screensize */
 
 @media (max-width: 600px) {
+  body {
+    background-color: #222936;
+  }
   nav {
     width: 100%;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellowgreen;
+    background-color: #278783;
     position: fixed;
     margin: auto;
   }
@@ -111,9 +131,10 @@ footer {
     align-items: center;
     padding: 10px;
     text-decoration: none;
+    color: #ffebd0;
   }
   .container {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,7 +142,7 @@ footer {
     margin: auto;
     margin-top: 55px;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: #faeae1;
   }
   .card img {
     object-fit: cover;
@@ -129,10 +150,13 @@ footer {
   }
   footer {
     position: fixed;
-    background-color: greenyellow;
+    background-color: #278783;
+    color: #ffebd0;
     height: 35px;
     width: 100%;
     bottom: 0;
     margin: auto;
+    display: flex;
+    align-items: center;
   }
 }
