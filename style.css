@@ -51,7 +51,8 @@ nav a {
 .card img {
   height: 70%;
   width: 100%;
-  /* padding-bottom: 3px; */
+  object-fit: cover;
+  object-position: center;
 }
 .card span {
   padding: 5px;
@@ -62,6 +63,10 @@ nav a {
   margin-bottom: 2px;
   line-height: 4px;
   padding-left: 3px;
+  font-size: 15px;
+}
+.card p {
+  font-size: 13px;
 }
 .card .desc {
   padding: 0 8px 0 8px;
@@ -118,6 +123,10 @@ footer {
     margin-bottom: 20px;
     background-color: white;
   }
+  .card img {
+    object-fit: cover;
+    object-position: center;
+  }
   footer {
     position: fixed;
     background-color: greenyellow;
@@ -126,4 +135,4 @@ footer {
     bottom: 0;
     margin: auto;
   }
-} 
+}
