@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: azure;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  height: 30px;
+  width: 100vw;
+  background-color: yellowgreen;
+  top: 0;
+}
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  background-color: aquamarine;
+}
+.card {
+  width: 250px;
+  height: 280px;
+  border: 2px solid greenyellow;
+  border-radius: 2px;
+  margin: 10px;
+  object-fit: cover;
+  object-position: center;
+  /* padding: 10px; */
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.card img {
+  height: 70%;
+  width: 100%;
+  /* padding-bottom: 3px; */
+}
+.card span {
+  padding: 5px;
+}
+
+.card h3 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  line-height: 4px;
+  padding-left: 3px;
+}
+.card .desc {
+  padding: 0 8px 0 8px;
+}
+.desc p {
+  line-height: 15px;
+  padding: 5px;
+}
+button {
+  display: block;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+}
+/* footer styling */
+footer {
+  position: fixed;
+  background-color: greenyellow;
+  height: 35px;
+  width: 100%;
+  bottom: 0;
+  margin: auto;
+}
+
